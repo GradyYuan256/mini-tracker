@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="./dist/index.js"></script> -->
+    <script type="module" src="./index.mjs"></script>
+
+    <button target-key="report-btn">Track me</button>
+    <button id="clickme">Click Me</button>
+
+    <script>
+        function reportError() {
+            // throw new Error('啥')
+            // let value = list //Uncaught ReferenceError: list is not defined
+            Promise.reject('啥')
+        }
+        document.getElementById('clickme').addEventListener('click', () => {
+            reportError()
+        })
+
+        // new tracker({
+        //     requestUrl: 'http://localhost:9000/tracker',
+        //     historyTracker: true,
+        //     domTracker: true,
+        //     jsError: true,
+        // })
+    </script>
+</body>
+</html>
