@@ -1,5 +1,5 @@
 {
-  "name": "@gradyyuan/tracker",
+  "name": "mini-tracker",
   "version": "1.0.0",
   "description": "简单版的数据上报 SDK",
   "main": "dist/index.js",
@@ -9,14 +9,14 @@
   "scripts": {
     "build": "rollup -c"
   },
-  "keywords": ["埋点", "错误上报", "tracker"],
+  "keywords": ["埋点", "数据上报", "tracker"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/"
+    "url": "git@github.com:GradyYuan256/mini-tracker.git"
   },
   "files": ["dist"],
-  "author": "GradyYuan",
-  "license": "ISC",
+  "author": "GradyYuan256",
+  "license": "MIT",
   "devDependencies": {
     "rollup": "^2.77.2",
     "rollup-plugin-dts": "^4.2.2",

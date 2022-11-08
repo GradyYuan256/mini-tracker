@@ -19,7 +19,7 @@ export default [
         input: "./src/core/index.ts",
         file: path.resolve(__dirname, "./dist/index.js"),
         format: "umd", //打包生成 AMD CMD UMD
-        name: "tracker",
+        name: "mini-tracker",
       },
     ],
     plugins: [ts()],
